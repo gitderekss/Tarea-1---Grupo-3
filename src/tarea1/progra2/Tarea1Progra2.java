@@ -7,11 +7,18 @@ public class Tarea1Progra2 {
     public static void main(String[] args) {
         JOptionPane.showMessageDialog(null, "Bienvenido, por favor, inserte los datos que se le solicitan a continuación");
         
-        String nombre = JOptionPane.showInputDialog(null, "Nombre: ");
-        String apellido = JOptionPane.showInputDialog(null, "Apellido: ");
-        String edad = JOptionPane.showInputDialog(null, "Edad: "); 
-        String email = JOptionPane.showInputDialog(null, "Email: ");
-        String telefono = JOptionPane.showInputDialog(null, "Número de teléfono: ");
+        String nombre = JOptionPane.showInputDialog(null, "Ingrese su nombre: ");
+        String apellido = JOptionPane.showInputDialog(null, "Ingrese su apellido: ");
+        String edad = JOptionPane.showInputDialog(null, "Ingrese su edad: "); 
+        String email = JOptionPane.showInputDialog(null, "Ingrese su email: ");
+        String telefono = JOptionPane.showInputDialog(null, "Ingrese su número de teléfono: ");
+        
+        JOptionPane.showMessageDialog(null, "         DATOS      \n\n" +
+                                            "Nombre: " + nombre + "\n" +
+                                            "Apellido: " + apellido + "\n" +
+                                            "Edad: " + edad + "\n" +
+                                            "Email: " + email + "\n" +
+                                            "Número de teléfono: " + telefono);
     }
     
 }
