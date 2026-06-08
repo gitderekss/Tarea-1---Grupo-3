@@ -10,8 +10,18 @@ public class Tarea1Progra2 {
         String nombre = JOptionPane.showInputDialog(null, "Ingrese su nombre: ");
         String apellido = JOptionPane.showInputDialog(null, "Ingrese su apellido: ");
         String edad = JOptionPane.showInputDialog(null, "Ingrese su edad: "); 
+        int edadNum = 0;
+        try {
+            edadNum = Integer.parseInt(edad);
+            if (edadNum < 0) {
+                JOptionPane.showMessageDialog(null, "La edad no puede ser negativa. Se asignara 0.", "Error de Validacion", JOptionPane.WARNING_MESSAGE);
+                edadNum = 0;
+            }
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(null, "Formato de edad inválido, solo números enteros. Se le asignara 0."+"Error " + e.getMessage() + JOptionPane.ERROR_MESSAGE);
+        }
         String email = JOptionPane.showInputDialog(null, "Ingrese su email: ");
-        String telefono = JOptionPane.showInputDialog(null, "Ingrese su número de teléfono: ");
+        String telefono = JOptionPane.showInputDialog(null, "Ingrese su número de telefono: ");
         
         JOptionPane.showMessageDialog(null, "         DATOS      \n\n" +
                                             "Nombre: " + nombre + "\n" +
