@@ -21,3 +21,4 @@ Aplicación básica en Java usando la librería Swing (`JOptionPane`) para captu
 
 
 ## Capturas
+Aquí va el intento de error
