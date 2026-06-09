@@ -21,4 +21,4 @@ Aplicación básica en Java usando la librería Swing (`JOptionPane`) para captu
 
 
 ## Capturas
-Conflicto creado por Derek
+Conflicto creado por Matipro
